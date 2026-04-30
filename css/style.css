@@ -102,3 +102,228 @@ main {
 .header-downbar a:hover {
     color: #ff4500;
 }
+
+.footer {
+    background-color: #e9765e;
+    color: white;
+    padding: 60px 0;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    width: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+    opacity: 0.9;
+}
+
+.links h3, .subscribe h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.links-columns {
+    display: flex;
+    gap: 40px;
+}
+
+.links-columns ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-columns a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+    opacity: 0.8;
+}
+
+.links-columns a:hover {
+    opacity: 1;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.subscribe-form input {
+    padding: 12px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.subscribe-form button {
+    background-color: #f7b700;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.payment-icons img {
+    height: 25px;
+    background: white;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+main {
+    padding: 20px 0;
+    background-color: #fcfbe9;
+}
+
+.category-title {
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: 30px 0 20px 20px;
+    color: #333;
+}
+
+.main-lines {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.btn-add-to-cart {
+    background-color: #7fad39;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+body { font-family: sans-serif; color: #333; background: #fdfdfd; }
+.category-path { color: #999; font-size: 14px; margin-bottom: 20px; }
+
+.product-card {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.product-img-container { flex: 0 0 350px; }
+.product-img { width: 100%; border-radius: 8px; border: 1px solid #eee; }
+
+.product-info { flex: 1; display: flex; flex-direction: column; gap: 15px; }
+.product-name { font-size: 28px; margin: 0; }
+.rating { color: #f39c12; font-size: 14px; }
+.reviews { color: #999; margin-left: 10px; }
+.description { color: #666; line-height: 1.5; font-size: 14px; }
+
+.label { font-size: 12px; color: #999; display: block; margin-bottom: 5px; }
+.price-container { display: flex; align-items: center; gap: 10px; }
+.current-price { font-size: 24px; font-weight: bold; color: #2ecc71; }
+.old-price { text-decoration: line-through; color: #ccc; }
+.discount-badge { color: #e74c3c; font-size: 12px; font-weight: bold; }
+.wishlist-btn { background: none; border: none; cursor: pointer; font-size: 20px; }
+
+.weight-options { display: flex; gap: 10px; }
+.weight-btn {
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    background: #fff;
+    cursor: pointer;
+}
+.weight-btn.active { background: #ffcc00; border-color: #ffcc00; }
+
+.quantity { margin-bottom: 10px; font-size: 14px; color: #999; }
+.add-to-cart {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.similar-products { flex: 0 0 200px; }
+.similar-item {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+.similar-item img { width: 100%; border-radius: 4px; }
+.badge-mini {
+    position: absolute; top: 5px; left: 5px;
+    background: #fff; font-size: 10px; padding: 2px 5px; border: 1px solid #eee;
+}
