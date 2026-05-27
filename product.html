@@ -25,11 +25,9 @@
                 </div>
             </div>
 
-
-
             <div class="header-midbar">
                 <div class="logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="img/logo.img" alt="Русская пекарня">
                         <span class="logo-text">РУССКАЯ<br>ПЕКАРНЯ</span>
                     </a>
@@ -50,8 +48,6 @@
                 </div>
             </div>
             
-            
-            
             <div class="header-downbar">
                 <div class="categories-choice">
                     <img src="img/categories.img" alt="три полоски">
@@ -59,22 +55,23 @@
                 </div>
 
                 <div class="buttons">
-                    <span><a href="#">HOME</a></span>
-                    <span><a href="#">PRODUCT</a></span>
-                    <span><a href="#">STORES</a></span>
-                    <span><a href="#">CONTACT</a></span>
+                    <span><a href="index.html">HOME</a></span>
+                    <span><a href="product.html">PRODUCT</a></span>
+                    <span><a href="stores.html">STORES</a></span>
+                    <span><a href="contact.html">CONTACT</a></span>
                 </div>
 
                 <div class="cart">
-                    <img src="img/cart-logo" alt="cart-icon">
-                    <span>1337</span>
+                    <a href="cart.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                        <img src="img/cart-logo" alt="cart-icon">
+                        <span>1337</span>
+                    </a>
                 </div>
             </div>
         </header>
 
-
     <main>
-        <nav class="category-path">Главная / Хлебобулочные изделия / Хлеб кукурузный</nav>
+        <nav class="category-path"><a href="index.html" style="text-decoration: none; color: inherit;">Главная</a> / Хлебобулочные изделия / Хлеб кукурузный</nav>
         
         <div class="product-card">
             <!-- Левая часть: Изображение -->
@@ -82,7 +79,7 @@
                 <img src="https://ibb.co" alt="Хлеб кукурузный" class="product-img">
             </div>
 
-            <!-- Центральная часть: Инфо -->
+            <!-- Central part: Info -->
             <div class="product-info">
                 <h2 class="product-name">Хлеб Кукурузный</h2>
                 
@@ -112,27 +109,26 @@
                     <div class="quantity">
                         Количество <button>-</button> <span>1</span> <button>+</button>
                     </div>
-                    <button class="add-to-cart">В КОРЗИНУ</button>
+                    <button class="add-to-cart" onclick="window.location.href='cart.html'">В КОРЗИНУ</button>
                 </div>
             </div>
 
             <!-- Правая часть: Похожие товары -->
             <aside class="similar-products">
                 <h3>Похожие товары</h3>
-                <div class="similar-item">
+                <div class="similar-item" style="cursor: pointer;" onclick="window.location.href='product.html'">
                     <div class="badge-mini">10% Скидка</div>
                     <img src="https://ibb.co" alt="Овсяный">
                     <span>Хлеб Овсяный</span>
                 </div>
-                <div class="similar-item">
+                <div class="similar-item" style="cursor: pointer;" onclick="window.location.href='product.html'">
                     <div class="badge-mini">10% Скидка</div>
                     <img src="https://ibb.co" alt="Ржаной">
                     <span>Хлеб Ржаной</span>
                 </div>
             </aside>
         </div>
-</main>
-
+    </main>
 
         <footer class="footer">
             <div class="footer-container">
@@ -157,10 +153,10 @@
                             <li><a href="#">Our sitemap</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">PRODUCT</a></li>
-                            <li><a href="#">CONTACT</a></li>
-                            <li><a href="#">STORES</a></li>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="product.html">PRODUCT</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a href="stores.html">STORES</a></li>
                         </ul>
                     </div>
                 </div>

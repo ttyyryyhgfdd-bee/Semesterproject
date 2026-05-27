@@ -71,41 +71,80 @@
         </header>
 
         <main>
-            <div class="contacts-info">
-                <h2>Контакты</h2>
-                <div class="contacts">
-                    <span class="address">Адрес: г.Челябинск, ул. Хлебная 12</span>
-                    <span class="schedule">Часы: Пн-Вс 08:00–21:00</span>
-                    <span class="contact-email">Email: hello@colorlib.com</span>
-                    <span class="contacts-numphone">Телефон: 1800-000-101</span>
+            <div class="stores-page">
+                <div class="stores-header">
+                    <h2>Наши магазины</h2>
+                    <p>Найдите ближайшую «Русскую пекарню» рядом с вами.</p>
                 </div>
-                <div class="contacts">
-                    <span class="address">Адрес: г.Челябинск, ул. Тортовая 21</span>
-                    <span class="schedule">Часы: Пн-Вс 08:00–21:00</span>
-                    <span class="contact-email">Email: hello@colorlib2.com</span>
-                    <span class="contacts-numphone">Телефон: 1800-000-102</span>
+
+                <div class="filters-bar">
+                    <div class="filter-search">
+                        <input type="text" placeholder="Поиск по адресу">
+                    </div>
+                    <div class="filter-select">
+                        <select>
+                            <option>Город: Челябинск</option>
+                        </select>
+                    </div>
+                    <button class="filter-btn">Открыто сейчас</button>
+                    <button class="filter-btn">24/7</button>
+                    <button class="filter-btn">Есть кафе</button>
+                    <button class="filter-reset">Сбросить фильтры</button>
                 </div>
-                <div class="contacts">
-                    <span class="address">Адрес: г.Челябинск, ул. Шеф-Повара 33</span>
-                    <span class="schedule">Часы: Пн-Вс 08:00–21:00</span>
-                    <span class="contact-email">Email: hello@colorlib3.com</span>
-                    <span class="contacts-numphone">Телефон: 1800-000-103</span>
-                </div>
-                <h2>FAQ</h2>
-                <div class="FAQ">
-                    <div class="info">
-                        <span><strong>Как я могу оформить заказ на вашем сайте?</strong> Добавляете товар в корзину, после чего покупаем еду из корзины, либо оплачиваете сразу.</span>
-                        <span><strong>Какие способы оплаты вы принимаете?</strong> В подвале сайта (в самом низу), есть способы оплаты.</span>
-                        <span><strong>Сколько стоит и сколько занимает доставка до моего города?</strong> Мы работаем лишь в Челябинской области, если ваш город находится вне области, к сожалению мы не сможем довести до вас товар.</span>
-                        <span><strong>Есть ли у вас физический магазин или ПВЗ?</strong> Конечно, все наши адреса описаны выше, однако ПВЗ нет, всё делается прямо на точках и привозится лично Вам!</span>
-                        <span><strong>У вас есть система скидок или программа лояльности для постоянных клиентов?</strong> Да, у нас есть система скидок, причём есть скидка лично Вам, если у вас день рождение! Вам всего-лишь нужно показать удостоверение личности.</span>
-                        <span><strong>Как с вами связаться, если у меня возник срочный вопрос?</strong> Чуть выше находятся наши адреса и почты, доставка происходит по первой почте.</span>
+
+                <div class="stores-content">
+                    <div class="stores-sidebar">
+                        <div class="sidebar-header">
+                            <h3>Найдено: 3 магазина</h3>
+                            <div class="sort-select">Сортировать: по расстоянию</div>
+                        </div>
+                        
+                        <div class="stores-list">
+                            <div class="store-card active" onclick="window.location.href='product.html'">
+                                <span class="store-num">1</span>
+                                <div class="store-info-text">Ул. Хлебная, 12</div>
+                                <div class="store-distance">0,6 км</div>
+                            </div>
+                            <div class="store-card" onclick="window.location.href='product.html'">
+                                <span class="store-num">2</span>
+                                <div class="store-info-text">Ул. Тортовая, 21</div>
+                                <div class="store-distance">1,7 км</div>
+                            </div>
+                            <div class="store-card" onclick="window.location.href='product.html'">
+                                <span class="store-num">3</span>
+                                <div class="store-info-text">Ул. Шеф-Повара, 33</div>
+                                <div class="store-distance">3,1 км</div>
+                            </div>
+                        </div>
+
+                        <p class="no-more-results">К сожалению, по вашему запросу больше ничего не нашлось</p>
+                    </div>
+
+                    <div class="map-section">
+                        <div class="map-header">
+                            <h3>Карта магазинов</h3>
+                            <p>Приблизьте карту или выберите магазин слева</p>
+                        </div>
+                        <div class="map-container">
+                            <div class="mock-map">
+                                <span class="map-marker pin-1">1</span>
+                                <span class="map-marker pin-2">2</span>
+                                <span class="map-marker pin-3">3</span>
+                                <div class="map-zoom">
+                                    <button>+</button>
+                                    <button>−</button>
+                                </div>
+                            </div>
+                            <div class="map-popup" style="cursor: pointer;" onclick="window.location.href='product.html'">
+                                <h4>Ул. Хлебная, 12</h4>
+                                <p>Сегодня: 8:00 - 22:00 · Есть кафе</p>
+                                <span class="popup-tip">Нажмите, чтобы посмотреть подробную страницу.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-
-
 
         <footer class="footer">
             <div class="footer-container">
