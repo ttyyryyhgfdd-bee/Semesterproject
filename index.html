@@ -13,67 +13,83 @@
         <header>
             <div class="header-topbar">
                 <div class="topbar-info">
-                    <span class="email">Hello@colorlib.com</span>
+                    <span class="email">✉ Hello@colorlib.com</span>
                     <span class="stick">|</span>
-                    <span class="freepromo">Free Shipping for all order of \$99</span>
+                    <span class="freepromo">Free Shipping for all order of $99</span>
                 </div>
                 <div class="topbar-socials">
-                    <a href="#">FaceBook</a>
-                    <a href="#">Viber</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Twitter</a>
+                    <a href="facebook.com">facebook</a>
+                    <a href="viber.com">viber</a>
+                    <a href="instagram.com">instagram</a>
+                    <a href="x.com">X</a>
                 </div>
             </div>
-
             <div class="header-midbar">
-                <div class="logo">
+                <div class="logo" style="display: flex; align-items: center; gap: 20px;">
                     <a href="index.html">
                         <img src="img/logo.jpg" alt="Русская пекарня">
                     </a>
+                    <div style="display: flex; align-items: center; gap: 5px; color: #888; font-size: 14px;">
+                        <span>Челябинск</span>
+                        <span style="font-size: 9px;">▼</span>
+                    </div>
                 </div>
 
                 <div class="search-box">
                     <form action="#">
-                        <input type="text" placeholder="Что вы ищите?">
+                        <input type="text" placeholder="Search for products...">
                     </form>
                 </div>
 
-                <div class="phone-number">
-                    <img src="img/phone.jpg" alt="1800-000-101">
-                </div>
-
-                <div class="profile">
-                    <img src="img/profile-icon.jpg" alt="You">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div class="phone-number" style="display: flex; align-items: center; gap: 5px; font-weight: bold;">
+                        <img src="img/phone.jpg" alt="1800-000-101">
+                        <span>1800-000-101</span>
+                    </div>
+                    <span class="stick">|</span>
+                    <div class="wishlist" style="position: relative; display: flex; align-items: center;">
+                        <span>♡</span>
+                        <span style="position: absolute; top: -8px; right: -8px; background: #7fad39; color: white; font-size: 10px; padding: 2px 5px; border-radius: 50%;">3</span>
+                    </div>
+                    <span class="stick">|</span>
+                    <div class="profile" style="display: flex; align-items: center; gap: 5px;">
+                        <img src="img/profile-icon.jpg" alt="You">
+                        <span>John Doe</span>
+                        <span style="font-size: 9px;">▼</span>
+                    </div>
                 </div>
             </div>
             
             <div class="header-downbar">
-                <div class="categories-choice">
-                    <img src="img/select-categories.jpg" alt="три полоски">
+                <div class="categories-choice" style="background-color: #F3A712; padding: 12px 24px; font-weight: bold; cursor: pointer;">
+                    <span style="color: #000;">≡ Select Categories</span>
                 </div>
 
                 <div class="buttons">
-                    <span><a href="index.html">HOME</a></span>
+                    <span><a href="index.html" style="color: #F3A712;">HOME</a></span>
                     <span><a href="product.html">PRODUCT</a></span>
                     <span><a href="stores.html">STORES</a></span>
                     <span><a href="contact.html">CONTACT</a></span>
                 </div>
 
                 <div class="cart">
-                    <a href="cart.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
-                        <img src="img/cart-logo.jpg" alt="cart-icon">
-                        <span>1337р.</span>
+                    <a href="cart.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 15px;">
+                        <div style="background-color: #F3A712; padding: 12px 20px; color: white; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+                            <span>CART 5 ▼</span>
+                        </div>
+                        <span style="font-weight: bold; font-size: 18px; color: #1c1c1c;">1337 ₽</span>
                     </a>
                 </div>
             </div>
         </header>
+
 
         <main>
             <h2 class="category-title">Хлебовыпечка</h2>
             <div class="main-lines">
                 <div class="main-card">
                     <div class="card-image-wrapper">
-                        <a href="product.html"><img src="img/bread1.jpg" alt="Хлеб"></a>
+                        <a href="product.html"><img src="img/bread1.png" alt="Хлеб"></a>
                         <div class="card-info-overlay">
                             <span class="discount">10% Скидка</span>
                             <h3 class="product-name"><a href="product.html" style="text-decoration: none; color: inherit;">Хлеб Кукурузный</a></h3>
@@ -83,7 +99,7 @@
                 </div>
                 <div class="main-card">
                     <div class="card-image-wrapper">
-                        <a href="product.html"><img src="img/bread2.jpg" alt="Хлеб"></a>
+                        <a href="product.html"><img src="img/bread2.png" alt="Хлеб"></a>
                         <div class="card-info-overlay">
                             <span class="discount">10% Скидка</span>
                             <h3 class="product-name"><a href="product.html" style="text-decoration: none; color: inherit;">Хлеб Овсяный</a></h3>
@@ -93,7 +109,7 @@
                 </div>
                 <div class="main-card">
                     <div class="card-image-wrapper">
-                        <a href="product.html"><img src="img/bread3.jpg" alt="Хлеб"></a>
+                        <a href="product.html"><img src="img/bread3.png" alt="Хлеб"></a>
                         <div class="card-info-overlay">
                             <span class="discount">10% Скидка</span>
                             <h3 class="product-name"><a href="product.html" style="text-decoration: none; color: inherit;">Хлеб Ржаной</a></h3>
@@ -107,7 +123,7 @@
             <div class="main-lines">
                 <div class="main-card">
                     <div class="card-image-wrapper">
-                        <a href="product.html"><img src="img/cake-napoleon.jpg" alt="Торт"></a>
+                        <a href="product.html"><img src="img/cake-napoleon.png" alt="Торт"></a>
                         <div class="card-info-overlay">
                             <span class="discount">10% Скидка</span>
                             <h3 class="product-name"><a href="product.html" style="text-decoration: none; color: inherit;">Торт Наполеон</a></h3>
@@ -117,7 +133,7 @@
                 </div>
                 <div class="main-card">
                     <div class="card-image-wrapper">
-                        <a href="product.html"><img src="img/pryaniki.jpg" alt="Пряники"></a>
+                        <a href="product.html"><img src="img/pryaniki.png" alt="Пряники"></a>
                         <div class="card-info-overlay">
                             <span class="discount">10% Скидка</span>
                             <h3 class="product-name"><a href="product.html" style="text-decoration: none; color: inherit;">Пряники домашние</a></h3>
@@ -127,7 +143,7 @@
                 </div>
                 <div class="main-card">
                     <div class="card-image-wrapper">
-                        <a href="product.html"><img src="img/puncakes.jpg" alt="Кексы"></a>
+                        <a href="product.html"><img src="img/puncakes.png" alt="Кексы"></a>
                         <div class="card-info-overlay">
                             <span class="discount">10% Скидка</span>
                             <h3 class="product-name"><a href="product.html" style="text-decoration: none; color: inherit;">Кексы</a></h3>
@@ -141,7 +157,7 @@
             <div class="main-lines">
                 <div class="main-card">
                     <div class="card-image-wrapper">
-                        <a href="product.html"><img src="img/hotdog.jpg" alt="сосиска в тесте"></a>
+                        <a href="product.html"><img src="img/hotdog.png" alt="сосиска в тесте"></a>
                         <div class="card-info-overlay">
                             <span class="discount">10% Скидка</span>
                             <h3 class="product-name"><a href="product.html" style="text-decoration: none; color: inherit;">Сосиска в тесте</a></h3>
@@ -151,7 +167,7 @@
                 </div>
                 <div class="main-card">
                     <div class="card-image-wrapper">
-                        <a href="product.html"><img src="img/elesh.jpg" alt="элеш"></a>
+                        <a href="product.html"><img src="img/elesh.png" alt="элеш"></a>
                         <div class="card-info-overlay">
                             <span class="discount">10% Скидка</span>
                             <h3 class="product-name"><a href="product.html" style="text-decoration: none; color: inherit;">Элеш с курицей</a></h3>
@@ -161,7 +177,7 @@
                 </div>
                 <div class="main-card">
                     <div class="card-image-wrapper">
-                        <a href="product.html"><img src="img/onion-pie.jpg" alt="пампушки"></a>
+                        <a href="product.html"><img src="img/onion-pie.png" alt="пампушки"></a>
                         <div class="card-info-overlay">
                             <span class="discount">10% Скидка</span>
                             <h3 class="product-name"><a href="product.html" style="text-decoration: none; color: inherit;">Чесночные пампушки</a></h3>
@@ -174,7 +190,6 @@
 
         <footer class="footer">
             <div class="footer-container">
-                <!-- Левая колонка: Логотип и контакты -->
                 <div class="footer-section contact-info">
                     <div class="footer-logo">
                         <img src="img/logo-white.jpg" alt="Logo" class="footer-logo-img">
@@ -185,7 +200,6 @@
                     <p>email: hello@colorlib.com</p>
                 </div>
 
-                <!-- Средняя колонка: Полезные ссылки разбитые на 2 списка -->
                 <div class="footer-section links">
                     <h3>USEFUL LINK</h3>
                     <div class="links-columns">
@@ -205,7 +219,6 @@
                     </div>
                 </div>
 
-                <!-- Правая колонка: Подписка и оплата -->
                 <div class="footer-section subscribe-block">
                     <h3>Sign up for our newsletter</h3>
                     <form class="subscribe-form">
